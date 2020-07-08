@@ -600,4 +600,10 @@ table th {
 	/* container and sections */
 	.container 	{ padding: 0 var(--spacing-4); }
 	section 		{ padding: var(--spacing-4) 0; }
+
+	/*allow canvas resizing on very small screens*/
+	.two-col, .three-col, .four-col,
+	.five-col, .six-col {
+		grid-template-columns: 1fr;
+	}
 }
